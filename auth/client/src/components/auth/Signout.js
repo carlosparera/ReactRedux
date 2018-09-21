@@ -4,11 +4,11 @@ import * as actions from '../../actions';
 
 class Signout extends Component {
   componentDidMount() {
-    tis.props.signout();
+    this.props.signout();
   }
   render() {
     return <div> Sorry to see you go</div>;
   }
 }
 
-export default cpnnect(null, actions)(Signout);
+export default connect(null, actions)(Signout);
